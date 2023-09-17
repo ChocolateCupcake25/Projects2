@@ -24,7 +24,7 @@ def block(proof,previous_hash=None):
 	}
 	chain.append(data)
 	print("Block Info: ", data)
-	jobject = json.dump(data)
+	jobject = json.dumps(data)
 	eobject = jobject.encode()
 
 	raw_hash = hashlib.sha512(eobject)
