@@ -75,7 +75,7 @@ print('previous hash code of first block: ',blockchain.chain[1]['previous_hash']
 # Write Task 03 code from below
 Current_genesis_hash = blockchain.chain[0]['Current_hash']
 Previous_1st_block_hash = blockchain.chain[1]['previous_hash']
-if (Current_genesis_hash = Previous_1st_block_hash):
+if Current_genesis_hash == Previous_1st_block_hash:
     print('The Hash of Current Block Matches with Previous Block...Hence Transaction Verified..!')
 
 else:
